@@ -1,4 +1,4 @@
-import { View, StyleSheet, Pressable, Button, TextInput } from "react-native";
+import { View, StyleSheet, Button, TextInput } from "react-native";
 import { Audio } from 'expo-av';
 import { useRoute } from "@react-navigation/native";
 import { useState, useEffect } from "react";
@@ -30,18 +30,16 @@ const Record = () => {
 
     async function startRecording() {
         try {
-            console.log('Requesting permissions..');
             await Audio.requestPermissionsAsync();
             await Audio.setAudioModeAsync({
                 allowsRecordingIOS: true,
                 playsInSilentModeIOS: true,
             });
-            console.log('Starting recording..');
+
             const { recording } = await Audio.Recording.createAsync(
                 Audio.RECORDING_OPTIONS_PRESET_HIGH_QUALITY
             );
             setRecording(recording);
-            console.log('Recording started');
         } catch (err) {
             console.error('Failed to start recording', err);
         }
@@ -70,7 +68,6 @@ const Record = () => {
 
 
     async function stopRecording() {
-        console.log('Stopping recording..');
         setRecording(undefined);
         await recording.stopAndUnloadAsync();
         const uri = recording.getURI();

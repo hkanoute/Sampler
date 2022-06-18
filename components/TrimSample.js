@@ -1,6 +1,6 @@
-import { Text, View, Pressable, StyleSheet, FlatList, SafeAreaView, StatusBar, TouchableOpacity } from "react-native";
+import { Text, View, Pressable, StyleSheet } from "react-native";
 import { useRoute } from "@react-navigation/native";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import Trimmer from 'react-native-trimmer'
 import { sampleSelector } from './LibrarySlice';

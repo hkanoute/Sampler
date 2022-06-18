@@ -34,7 +34,6 @@ const Library = () => {
     };
 
     const updatePad = (item) => {
-        console.log(item)
         if (item.type === "Local") {
             const modified = { id: padToModify.id, sampleId: item.id, title: item.title, description: item.description, duration: item.duration, start: item.start, end: item.end };
             dispatch(updateLibrary(modified));

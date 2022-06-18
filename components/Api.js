@@ -44,7 +44,6 @@ const Api = () => {
     }
 
     useEffect(() => {
-        console.log(libraryTitle)
         if (typeof libraryTitle !== 'undefined' && typeof libraryTitle !== null && libraryTitle.trim().length > 0) {
             setDisabled(false)
         }
@@ -58,7 +57,7 @@ const Api = () => {
     */
     const dowloadSample = async () => {
         try {
-            console.log(selectedItem)
+
             FS.downloadAsync(selectedItem.previews['preview-hq-mp3'], FS.documentDirectory + libraryTitle)
                 .then((status) => {
                     let sample = { id: id, title: libraryTitle, description: description, uri: status.uri, type: "API" }

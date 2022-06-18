@@ -1,8 +1,7 @@
 import { Text, View, Pressable, StyleSheet } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import { useNavigation, } from "@react-navigation/native";
-import { useDispatch } from "react-redux";
-import { updateSample } from "./LibrarySlice";
+
 
 const EditSample = () => {
 
@@ -13,7 +12,6 @@ const EditSample = () => {
     const navigation = useNavigation();
 
     const item = route.params;
-    console.log("HERE", item);
     return (
         <View style={styles.container}>
             <Pressable onPress={() => { navigation.navigate("Trim Sample", { id: item.id }); }} style={styles.pads}><Text style={styles.text} >Modifier le sample</Text></Pressable>

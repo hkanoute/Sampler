@@ -1,6 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import uuid from "react-uuid";
-import data from "../data";
 
 const LibrarySlice = createSlice({
     name: "library",

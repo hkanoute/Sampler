@@ -5,16 +5,13 @@ import thunk from "redux-thunk";
 import padReducer from './components/PadSlice';
 import libraryReducer from './components/LibrarySlice';
 
-//const reducers = combineReducers({ pad: padReducer, library: libraryReducer });
-//const persistConfig = { key: "root", storage: AsyncStorage };
-//const persistedReducer = persistReducer(persistConfig, reducers);
+const reducers = combineReducers({ pad: padReducer, library: libraryReducer });
+const persistConfig = { key: "root", storage: AsyncStorage };
+const persistedReducer = persistReducer(persistConfig, reducers);
 
 
 
 export const store = configureStore({
-    reducer: {
-        pad: padReducer,
-        library: libraryReducer
-    } //persistedReducer,
-    //middleware: [thunk],
+    reducer: persistedReducer,
+    middleware: [thunk],
 });

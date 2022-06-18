@@ -27,7 +27,6 @@ const Pad = () => {
         * if not, we can juste load it with a require from the pad Slice 
         */
         try {
-            console.log(item);
             if (item.type === "API" || item.type === "Record") {
                 await soundObject.loadAsync({ uri: item.uri });
                 /*
