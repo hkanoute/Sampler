@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "uri": "../assets/samples/clap_1.wav')",
+    "title": "clap",
+    "type": "Local"
+  },
+  {
+    "id": 2,
+    "uri": "test",
+    "title": "test",
+    "type": "test"
+  },
+  {
+    "id": 3,
+    "uri": "test",
+    "title": "test",
+    "type": "test"
+  },
+  {
+    "id": 4,
+    "uri": "test",
+    "title": "test",
+    "type": "test"
+  },
+  {
+    "id": 5,
+    "uri": "test",
+    "title": "test",
+    "type": "test"
+  },
+  {
+    "id": 6,
+    "uri": "test",
+    "title": "test",
+    "type": "test"
+  },
+  {
+    "id": 7,
+    "uri": "test",
+    "title": "test",
+    "type": "test"
+  },
+  {
+    "id": 8,
+    "uri": "test",
+    "title": "test",
+    "type": "test"
+  },
+  {
+    "id": 9,
+    "uri": "test",
+    "title": "test",
+    "type": "test"
+  },
+  {
+    "id": 10,
+    "uri": "test",
+    "title": "test",
+    "type": "test"
+  },
+  {
+    "id": 11,
+    "uri": "test",
+    "title": "test",
+    "type": "test"
+  },
+  {
+    "id": 12,
+    "uri": "test",
+    "title": "test",
+    "type": "test"
+  }
+]
